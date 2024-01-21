@@ -23,3 +23,143 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.search-form {
+  width: 371px;
+  height: 40px;
+  margin-top: 36px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  display: flex;
+  column-gap: 8px;
+}
+
+input[name="searchText"] {
+  display: block;
+  width: 272px;
+  height: 100%;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  color: #808080;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+input[name="searchText"]:hover {
+  border-color: #000;
+}
+
+input[name="searchText"]:focus {
+  border-color: #4E75FF;
+  outline: none;
+  color: #2E2F42;
+}
+
+input[name="searchText"]:focus::placeholder {
+  color: #2E2F42;
+}
+
+button[type="submit"] {
+  display: block;
+  height: 100%;
+  width: 91px;
+  border-radius: 8px;
+  background: #4E75FF;
+  padding-top: 8px auto;
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+button[type="submit"]:hover {
+  background-color: #6C8CFF;
+}
+
+.gallery {
+  display: flex;
+  width: 1128px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.photo-card {
+  width: calc((100% - 48px) / 3);  
+}
+
+.item-image{
+  max-height: 200px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.loader-text {
+  margin: 0 auto;
+  color: #2E2F42;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.loader {
+  margin-left: auto;
+  margin-right: auto;
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader-block {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
+}
+
+.load-more {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+  margin-left: 720px;
+  border-radius: 8px;
+  border-color: teal;
+  border-style: solid;
+  outline: none;
+}
