@@ -90,7 +90,7 @@ async function loadMoreHandler() {
           backgroundColor: 'red',
           messageColor: 'white',
           messageSize: 20,
-          timeout: 2000,
+          timeout: 5000,
           position: 'topRight', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter, center
         });
       }
